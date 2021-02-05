@@ -1,12 +1,13 @@
 // Remember to change your settings -- gulp.config.js
 
 // Gulp Packages
-const { gulp, src, dest, watch, series, parallel } = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 
 // CSS related plugins
 const sass = require("gulp-sass");
-const minifycss = require("gulp-uglifycss");
-const autoprefixer = require("gulp-autoprefixer");
+const postcss = require("gulp-postcss");
+const prefix = require("autoprefixer");
+const minify = require("cssnano")
 
 // Images plugins
 const imagemin = require("gulp-imagemin");
@@ -52,17 +53,28 @@ const buildStyles = (done) => {
     .on("error", sass.logError)
     .pipe(sourcemaps.write({ includeContent: false }))
     .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(autoprefixer())
+    .pipe(postcss([
+      prefix({
+        cascade: true,
+        remove: true
+      })
+    ]))
     .pipe(sourcemaps.write("./"))
     .pipe(dest(config.stylesDest))
     .pipe(filter("**/*.css"))
     .pipe(browserSync.stream())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(minifycss({ uglyComments: true }))
+    .pipe(postcss([
+      minify({
+        discardComments: {
+          removeAll: true
+        }
+      })
+    ]))
     .pipe(lineec())
     .pipe(dest(config.stylesDest))
     .pipe(filter("**/*.css"))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
 };
 
 // Images tasks

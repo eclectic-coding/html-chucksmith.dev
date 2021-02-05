@@ -1,6 +1,6 @@
 module.exports = {
   // Settings: Turn on/off build features
-  clean: true,
+  clean: false,
   styles: true,
   images: true,
   scripts: true,
