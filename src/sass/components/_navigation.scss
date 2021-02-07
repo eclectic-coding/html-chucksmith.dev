@@ -41,6 +41,10 @@
     color: var(--grey-light-1);
     transition: all .2s ease;
 
+    &--active {
+     color: var(--brand-primary);
+    }
+
     &:hover {
       background-color: var(--bg-dark-2);
       border-radius: 5px;
