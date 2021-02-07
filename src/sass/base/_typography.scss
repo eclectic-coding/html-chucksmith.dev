@@ -1,3 +1,12 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: var(--color-grey-dark-1);
+}
+
+
 // A better looking default horizontal rule
 hr {
   display: block;
