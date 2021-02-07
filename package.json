@@ -8,8 +8,8 @@
     "email": "chuck@eclecticsaddlebag.com"
   },
   "scripts": {
-    "build": "parcel build src/copy/index.html",
-    "dev": "parcel src/copy/index.html --open"
+    "dev": "gulp watch",
+    "build": "gulp"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

@@ -25,7 +25,7 @@ module.exports = {
   scriptsDest: "dist/js/",
 
   // Copy
-  copySrc: "src/copy/**/*",
+  copySrc: "src/copy/*",
   copyDest: "dist/",
 
   // reload
