@@ -1,0 +1,22 @@
+.brand {
+  margin-top: 4rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--grey-light-1);
+    text-align: center;
+  }
+
+  &__picture {
+    width: 13rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--bg-dark-3);
+  }
+}

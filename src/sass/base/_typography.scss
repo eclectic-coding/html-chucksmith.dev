@@ -3,9 +3,24 @@ body {
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.7;
+  height: 100vh;
   color: var(--color-grey-dark-1);
 }
 
+header {
+  background-color: #111418;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 15%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 // A better looking default horizontal rule
 hr {

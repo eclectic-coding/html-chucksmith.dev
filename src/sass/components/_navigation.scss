@@ -1,0 +1,27 @@
+.navbar {
+  padding: 1.6rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    list-style: none;
+    line-height: 1.7;
+    padding: 0.5rem 0;
+    display: inline-block;
+  }
+
+  &__link {
+    color: var(--grey-light-1);
+    transition: all .2s ease;
+
+    &:hover {
+      background-color: var(--bg-dark-2);
+      border-radius: 5px;
+      padding: 0 0.6rem;
+      color: var(--brand-primary);
+    }
+    display: block;
+  }
+}
