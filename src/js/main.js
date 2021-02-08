@@ -1,10 +1,12 @@
 const linkContainer = document.getElementById("navbar");
-const links = linkContainer.getElementsByClassName("navbar__link");
+const links = linkContainer.getElementsByClassName("sidebar__navbar--link");
+console.log(links);
+console.log(links[0]);
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
-    let current = document.getElementsByClassName("navbar__link--active");
-    current[0].className = current[0].className.replace("navbar__link--active", "");
-    this.className += " navbar__link--active";
+    let current = document.getElementsByClassName("sidebar__navbar--link--active");
+    current[0].className = current[0].className.replace("sidebar__navbar--link--active", "");
+    this.className += " sidebar__navbar--link--active";
   });
 }
