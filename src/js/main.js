@@ -1,7 +1,5 @@
 const linkContainer = document.getElementById("navbar");
 const links = linkContainer.getElementsByClassName("sidebar__navbar--link");
-console.log(links);
-console.log(links[0]);
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
