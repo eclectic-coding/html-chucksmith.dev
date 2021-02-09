@@ -9,18 +9,24 @@ body {
 
 header {
   background-color: #111418;
-  height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex: 0 0 20%;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+}
+
+.btn {
+  color: inherit;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
 // A better looking default horizontal rule

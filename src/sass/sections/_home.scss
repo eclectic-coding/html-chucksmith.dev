@@ -1,0 +1,46 @@
+.home {
+  color: var(--grey-light-1);
+  text-align: center;
+
+  height: 100vh;
+  background-image: linear-gradient(to right bottom,
+                    rgba(#111418, 0.95),
+                    rgba(#111418, 0.95)),
+                    url(../img/home-hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__subtitle {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 1.6rem;
+  }
+
+  &__location {
+    margin-bottom: 2rem;
+
+  }
+
+  &__button--outline {
+    color: var(--brand-primary);
+    border: 2px solid var(--brand-primary);
+    margin-top: 2rem;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--brand-primary);
+
+    }
+  }
+}

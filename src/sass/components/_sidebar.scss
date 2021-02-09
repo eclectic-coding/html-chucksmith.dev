@@ -1,5 +1,19 @@
 //Navigation brand section
 .sidebar {
+  height: 100%;
+  width: 22.5rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
   &__brand {
     margin-top: 4rem;
     text-align: center;
