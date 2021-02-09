@@ -35,9 +35,14 @@
   <header class="sidebar">
     <div class="sidebar__brand">
       <a href="/">
-        <img src="img/chuck-profile.jpg"
-             alt="Chuck's profile picture"
-             class="sidebar__brand--picture">
+        <picture>
+          <source srcset="img/profile.webp"
+               alt="Chuck's profile picture"
+               class="sidebar__brand--picture">
+          <img src="img/profile.jpg"
+               alt="Chuck's profile picture"
+               class="sidebar__brand--picture">
+        </picture>
       </a>
       <h1 class="sidebar__brand--name">Chuck Smith</h1>
     </div>
