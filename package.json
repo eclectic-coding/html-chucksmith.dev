@@ -34,6 +34,6 @@
     "gulp-uglify": "^3.0.2",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.6",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^8.3.1"
   }
 }
