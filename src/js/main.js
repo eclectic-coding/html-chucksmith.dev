@@ -8,3 +8,8 @@ for (let i = 0; i < links.length; i++) {
     this.className += " sidebar__navbar--link--active";
   });
 }
+
+const toggleBtn = document.getElementById("menu__toggle")
+toggleBtn.addEventListener('click', () => {
+  console.log('Click toggle event');
+})

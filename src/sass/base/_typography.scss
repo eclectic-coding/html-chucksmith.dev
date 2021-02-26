@@ -9,7 +9,12 @@ body {
 
 header {
   background-color: #111418;
+  grid-area: navbar;
 
+}
+
+footer {
+  grid-area: footer;
 }
 
 a {

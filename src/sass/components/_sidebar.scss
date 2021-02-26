@@ -1,28 +1,19 @@
 //Navigation brand section
 .sidebar {
-  height: 100%;
-  width: 22.5rem;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  grid-area: navbar;
   background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
 
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 
   &__brand {
-    margin-top: 4rem;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //margin-top: 4rem;
+    //text-align: center;
+    order: 1;
 
     &--picture {
+      display: none;
       width: 13rem;
       height: 100%;
       border-radius: 50%;
@@ -34,29 +25,30 @@
       font-size: 2.1rem;
       font-weight: 500;
       color: var(--grey-light-1);
-      text-align: center;
+      //text-align: center;
+      margin: 0;
+      padding: 0.5rem 1rem;
     }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
   }
 
   &__navbar {
     padding: 1.6rem;
     text-align: center;
 
-    display: flex;
-    flex-direction: column;
+    display: none;
 
     &--item {
       list-style: none;
       line-height: 1.7;
       padding: 0.5rem 0;
-      display: inline-block;
+      display: block;
+    }
+
+    &--toggle {
+      color: var(--grey-light-1);
+      order: 3;
+      padding-right: 1rem;
+
     }
 
     &--link {
@@ -80,32 +72,33 @@
 
   &__social {
     color: var(--grey-light-4);
-    margin: 2rem 0;
     font-size: 2rem;
+    padding: 1rem;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    order: 2
+  }
 
-    > * {
-      padding: 0 0.7rem;
-      transition: all .5s;
-    }
+  &__social > * {
+    padding: 0 0.7rem;
+    transition: all .5s;
+  }
 
-    &--dev:hover {
-      color: #666;
-    }
+  &--dev:hover {
+    color: #666;
+  }
 
-    &--github:hover {
-      color: #666;
-    }
+  &--github:hover {
+    color: #666;
+  }
 
-    &--linkedin:hover {
-      color: #2867b2;
-    }
+  &--linkedin:hover {
+    color: #2867b2;
+  }
 
-    &--twitter:hover {
-      color: #1da1f2;
-    }
+  &--twitter:hover {
+    color: #1da1f2;
   }
 }
+
+

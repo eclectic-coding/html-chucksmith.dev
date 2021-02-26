@@ -31,7 +31,7 @@
 </head>
 
 <body>
-<div>
+<div class="container" role="main">
   <!-- Sidebar header -->
   <header class="sidebar">
     <div class="sidebar__brand">
@@ -47,7 +47,7 @@
       </a>
       <h1 class="sidebar__brand--name">Chuck Smith</h1>
     </div>
-    <div class="sidebar__container">
+      <div id="menu__toggle" class="sidebar__navbar--toggle"><i class="fas fa-bars"></i></div>
       <ul class="sidebar__navbar" id="navbar">
         <li class="sidebar__navbar--item">
           <a href="#home" class="sidebar__navbar--link sidebar__navbar--link--active">Home</a>
@@ -87,22 +87,19 @@
           </a>
         </div>
       </div>
-    </div>
   </header>
   <!-- end of Sidebar header -->
+  <section id="home" class="home">
+    <div class="home_hero">
+      <p class="home__subtitle">Welcome</p>
+      <h2 class="home__title">I'm Chuck Smith</h2>
+      <p class="home__location">based in Eastern, North Carolina</p>
+      <button class="btn home__button--outline">Hire Me</button>
+    </div>
+  </section>
 
-  <div class="container" role="main">
-    <section id="home" class="home">
-      <div class="home_hero">
-        <p class="home__subtitle">Welcome</p>
-        <h2 class="home__title">I'm Chuck Smith</h2>
-        <p class="home__location">based in Eastern, North Carolina</p>
-        <button class="btn home__button--outline">Hire Me</button>
-      </div>
-    </section>
-
-  </div>
 </div>
+
 
 <script src="js/app.js"></script>
 
