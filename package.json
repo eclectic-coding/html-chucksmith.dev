@@ -33,7 +33,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^6.0.0",
-    "postcss": "^8.3.4",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1"
   }
 }
